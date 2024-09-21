@@ -25,10 +25,10 @@ class Program
         {
             sum += num;
         }
-        Console.WriteLine($"The sum of all numbers is: {sum}");
+        Console.WriteLine($"The sum is: {sum}");
 
         float average = ((float)sum)/(float)numbers.Count;
-        Console.WriteLine($"The average of all numbers is: {average}");
+        Console.WriteLine($"The average is: {average}");
 
         int maxNum = numbers[0];
         foreach (int num in numbers)
