@@ -9,9 +9,9 @@ class Program
        int magicNumber = number;
         Console.Write("What is your guess? ");
         int guess = int.Parse(Console.ReadLine());
-
+        int i = 1;
         while (guess != magicNumber) {
-
+            
         if (guess > magicNumber)
         {
             Console.WriteLine("higher");
@@ -23,9 +23,9 @@ class Program
         
         Console.Write("What is your guess? ");
         guess = int.Parse(Console.ReadLine());
-
+        i ++;
         }
         Console.WriteLine("You guessed it!");
-
+        Console.WriteLine($"You guessed it in {i} tries");
     }
 }
