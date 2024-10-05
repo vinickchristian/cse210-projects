@@ -5,16 +5,19 @@ public class Word
 
     public Word(string text)
     {
+        _text = text;
+        _isHidden = false;
        
     }
     
     public void Hide()
     {
-    
+        _isHidden = true;
     }
     
     public void Show()
     {
+        _isHidden = false;
     
     }
     
@@ -25,6 +28,16 @@ public class Word
     
     public string GetDisplayText()
     {
-        return _isHidden? "_" : _text;
+        // If the word is hidden, return underscores instead of the actual text
+         if (_isHidden)
+        {
+            // Return underscores for hidden words (matching the length of the original word)
+            return new string('_', _text.Length);
+        }
+        else
+        {
+            // Return the word itself if it's not hidden
+            return _text;
+        }
     }
 }
