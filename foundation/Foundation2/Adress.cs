@@ -1,6 +1,5 @@
 public class Address
 {
-    // Private fields for encapsulation
     private string _street;
     private string _city;
     private string _state;
