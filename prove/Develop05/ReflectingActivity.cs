@@ -68,7 +68,7 @@ public class ReflectingActivity : Activity
     {
         string question = GetRandomQuestion();
 
-        // Check if the question has already been displayed
+        // exceeds core requirements by Checking if the question has already been displayed
         if (!usedQuestions.Contains(question))
         {
             Console.WriteLine(question);
